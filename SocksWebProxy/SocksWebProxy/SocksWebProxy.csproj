@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.1;net40</TargetFrameworks>
+    <Version>1.0.6.0</Version>
+    <Company>Landon Key</Company>
+    <Copyright>Copyright ©  2014</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Org.Mentalis\Org.Mentalis.csproj" />
+  </ItemGroup>
+</Project>
