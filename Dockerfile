@@ -12,4 +12,4 @@ WORKDIR /app
 
 COPY --from=build /app .
 
-ENTRYPOINT ["dotnet", "Core3Api.dll"]
+ENTRYPOINT ["dotnet", "WebProxy.dll"]
