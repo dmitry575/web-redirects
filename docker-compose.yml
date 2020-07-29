@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  tors:
+    build:
+      context: tors/
+      dockerfile: Dockerfile
+    ports:
+      - 9050:9080      
+      - 8000:8030
+
+  app:
+    build:
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_tors__PortStart=9050
+      - ASPNETCORE_tors__PortControlStart=8000
+      - ASPNETCORE_tors__PortCount=30
+      - ASPNETCORE_server__url=http://localhost:5004
+    depends_on:
+      - tors
+    ports:
+      - 5004:5004

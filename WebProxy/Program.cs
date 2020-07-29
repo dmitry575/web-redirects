@@ -15,6 +15,7 @@ namespace WebProxy
             var config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables("ASPNETCORE_");
                 .Build();
 
             CreateWebHostBuilder(args, config).Build().Run();

@@ -3,3 +3,7 @@ packages/
 ProxyWork/bin/
 ProxyWork/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 ProxyWork/obj/
+WebProxy/bin/
+WebProxy/obj/project.assets.json
+WebProxy/obj/project.nuget.cache
+WebProxy/obj/
